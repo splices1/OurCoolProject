@@ -6,23 +6,23 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent">
 
-<EditText
-    android:id="@+id/bannerPersonMail"
-    android:layout_width="172dp"
-    android:layout_height="39dp"
-    android:layout_above="@+id/bannerText2"
-    android:layout_alignParentStart="true"
-    android:layout_marginStart="0dp"
-    android:layout_marginEnd="0dp"
-    android:layout_marginBottom="0dp"
-    android:layout_toStartOf="@+id/bannerPhoto"
-    android:background="@drawable/back"
-    android:ems="10"
-    android:inputType="textPersonName"
-    android:text=""
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/BannerPersonName"
-    tools:ignore="LabelFor,UnknownId" />
+    <EditText
+        android:id="@+id/bannerPersonMail"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/bannerText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/bannerPhoto"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BannerPersonName"
+        tools:ignore="LabelFor,UnknownId,UnknownIdInLayout" />
 <EditText
     android:id="@+id/bannerPersonName"
     android:layout_width="wrap_content"
@@ -93,7 +93,7 @@ android:layout_height="match_parent">
     app:layout_constraintTop_toTopOf="parent"
     tools:srcCompat="@tools:sample/avatars" />
 <Button
-    android:id="@+id/SkipButton"
+    android:id="@+id/LikeButton"
     android:layout_width="205dp"
     android:layout_height="wrap_content"
     android:layout_below="@+id/bannerAboutMe"
@@ -103,7 +103,7 @@ android:layout_height="match_parent">
     android:layout_marginEnd="-1dp"
     android:layout_marginBottom="126dp"
     android:text="Like"
-    tools:ignore="UnknownId" />
+    tools:ignore="DuplicateIds,UnknownId,UnknownIdInLayout" />
 
 <Button
     android:id="@+id/SkipButton"
@@ -114,6 +114,6 @@ android:layout_height="match_parent">
     android:layout_marginStart="0dp"
     android:layout_marginEnd="0dp"
     android:layout_marginBottom="125dp"
-    android:layout_toStartOf="@+id/SkipButton"
+    android:layout_toStartOf="@+id/LikeButton"
     android:text="Skip" />
 </RelativeLayout>

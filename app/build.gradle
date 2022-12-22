@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 33
@@ -14,6 +15,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding true
     }
 
     buildTypes {
@@ -74,7 +79,7 @@ dependencies {
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
 
     // Jetpack Compose Integration
-    implementation "androidx.navigation:navigation-compose:2.6.0-alpha03"
+    implementation "androidx.navigation:navigation-compose:2.6.0-alpha04"
 
     implementation platform('com.google.firebase:firebase-bom:27.1.0')
     implementation 'com.google.firebase:firebase-analytics'
@@ -85,7 +90,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database'
 
-    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
 
     implementation 'com.google.firebase:firebase-auth:21.1.0'
 
@@ -93,11 +98,11 @@ dependencies {
     implementation "com.google.firebase:firebase-auth:21.1.0"
     implementation "com.google.firebase:firebase-storage:20.1.0"
     implementation "com.google.firebase:firebase-database:20.1.0"
-    implementation "com.google.firebase:firebase-messaging:23.1.0"
+    implementation "com.google.firebase:firebase-messaging:23.1.1"
     implementation "com.google.firebase:firebase-config:21.2.0"
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.google.android.gms:play-services-places:17.0.0'
-    implementation 'com.kelvinapps:rxfirebase:0.0.16'
+    //implementation 'com.kelvinapps:rxfirebase:0.0.16'
     implementation 'com.firebaseui:firebase-ui-database:1.2.0'
 
     implementation 'com.firebaseui:firebase-ui:0.6.2'

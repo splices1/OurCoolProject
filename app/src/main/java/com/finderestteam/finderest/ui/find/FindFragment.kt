@@ -166,7 +166,7 @@ class FindFragment : Fragment() {
             return
         }
 
-        if(FirebaseAuth.getInstance().currentUser.email == listDt[it3].userMail){
+        if(FirebaseAuth.getInstance().currentUser?.email == listDt[it3].userMail){
             it3++
         }
 
