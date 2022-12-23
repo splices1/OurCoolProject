@@ -46,7 +46,7 @@
         android:inputType="textPersonName"
         android:text="Person_name"
         android:textColor="@color/buttonColor"
-        android:textSize="20sp"
+        android:textSize="21sp"
         app:layout_constraintEnd_toStartOf="@+id/BannerPhoto"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
